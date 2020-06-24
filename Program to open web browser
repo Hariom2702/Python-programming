@@ -1,0 +1,12 @@
+import urllib.request
+import webbrowser
+weburl=urllib.request.urlopen('http://www.google.com/')
+html=weburl.read()
+data=weburl.getcode()
+url=weburl.geturl()
+inf=weburl.info()
+print("the url is",url)
+print("HTTP status code is:",data)
+print("the info()returned:\n",inf)
+print("now opening the url",url)
+webbrowser.open_new(url)
