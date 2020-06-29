@@ -1,0 +1,10 @@
+import numpy as np
+interest_rate=float(input("Enter the interest rate:"))
+monthly_rate=(interest_rate)/(12*100)
+years=float(input("Enter the time period IN YEARS:"))
+number_month=years*12
+loan_amount=float(input("Enter the loan amount:"))
+AMT=abs(np.pmt(monthly_rate,number_month,loan_amount))
+print("Your monthly amount including interest will be rs",round(AMT,2))
+
+                                                 
