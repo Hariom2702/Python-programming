@@ -1,0 +1,7 @@
+n=int(input('How many students?'))
+compwinner={ }
+for a in range(n):
+   key=input('name of the student:')
+   value=int(input('Number of competitions won:'))
+   compwinner[key]=value
+print('The dictionary now is:',compwinner)
