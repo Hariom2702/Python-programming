@@ -1,0 +1,15 @@
+def Sum(arr,size):
+    if(size==0):
+        return 0
+    else:
+        return arr[size-1]+Sum(arr,size-1)
+n=int(input("Enter the number of elements in the list:"))        
+a=[ ]
+for i in range(0,n):
+    element=int(input("Enter element:"))
+    a.append(element)
+print("The list is:")
+print(a)
+print("Sum of items in list:")
+b=Sum(a,n)
+print(b)
