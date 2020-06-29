@@ -1,0 +1,17 @@
+import sys
+sys.version 
+alist=[]
+n=eval(input("Enter the number of elements"))
+for i in  range(0,n):
+   a=int(input("Enter the element-"))
+   alist.append(a)
+print("Original list is:",alist)
+for i in range(1,n):
+   key=alist[i]
+   j=i-1
+   while j>=0 and key<alist[j]:
+      alist[j+1] = alist[j]
+      j=j-1
+   else: 
+       alist[j+1] = key
+print("list after sorting:",alist)
