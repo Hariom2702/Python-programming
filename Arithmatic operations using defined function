@@ -1,0 +1,10 @@
+def calc(x,y):
+    return x+y,x-y,x*y,x/y,x%y
+num1=int(input("Enter number1:"))
+num2=int(input("Enter number2:"))
+add,sub,mul,div,mod=calc(num1,num2)
+print("sum of given numbers:",add)
+print("subtraction of given numbers:",sub)
+print("product of given numbers:",mul)
+print("quotient of given numbers:",div)
+print("modulo of given numbers:",mod)
