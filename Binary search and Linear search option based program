@@ -1,0 +1,37 @@
+def binary(alist,start,end,key):
+    if not start<end:
+        return -1
+    mid=(start+end)//2
+    if alist[mid]<key:
+        return binary(alist,mid+1,end,key)
+    elif alist[mid]>key:
+        return binary(alist,start,mid,key)
+    else:
+        return mid
+
+def linearsearch(lst,key):
+    n=len(lst)
+    for i in range (0,n):
+            if lst[i]==key:
+              f="True"
+              break
+    if f=="True":
+            return i
+    else:
+        return -1
+#ms
+lst=eval(input("enter a list"))
+key=int(input("enter the element to be searched"))
+s=input("b for binary search l for linear search: ")
+if s=="b":
+    pos=binary(lst,0,len(lst),key)
+    if pos==-1:
+        print("key is not found")
+    else:
+        print("key is found in position",pos+1)
+elif s=="l":
+   pos=linearsearch(lst,key)
+   if pos==-1:
+        print("key is not found")
+   else:
+        print("key is found in position",pos+1)
