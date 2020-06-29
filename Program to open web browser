@@ -1,7 +1,7 @@
 import urllib.request
 import webbrowser
 weburl=urllib.request.urlopen('http://www.google.com/')
-html=weburl.read()
+html=weburl.read()#weburl is a keyword.
 data=weburl.getcode()
 url=weburl.geturl()
 inf=weburl.info()
