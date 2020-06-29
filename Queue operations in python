@@ -1,0 +1,52 @@
+class queue:
+    def  _init_(Q):
+        Q.items=[]
+    def  _isempty(Q):
+        return Q.item==[]
+    def Enqueue(Qitem):
+        Q.item.append(item)
+        if len(Q.item)==1:
+            front=rear=0
+        else:
+            rear=len(Q.items)
+    def Dequeue(Q):
+        return Q.item(pop(0))
+    def peek(Q):
+        return Q.items[len(Q.items)-1]
+    def size(Q):
+        return len(Q.items)
+
+
+q=Queue()
+print("menu based queue: ")
+cd=True
+while cd:
+    print("1.enqueue")
+    print("2.dequeue")
+    print("3.display")
+    print("4.size of queue")
+    print("5.value at rear")
+    choice=int(input("Enter your choice(1-5):"))
+    if choice==1:
+               val=int(input("Enter the element:"))
+               q.Enqueue(val)
+    elif choice==2:
+               if q.items==[]:
+                   print("queue is empty")
+               else:
+                   print("deleted element is: ",q.dequeue)
+    elif choice==3:
+               print(q.item)
+    elif choice==4:
+               print("size of queue is:",q.size())
+    elif choice==5:
+               print("value of rear element",q.peek())
+    else:
+               print("you entered wrong choice:")      
+   print("do you want to continue:y/n")
+   option=input()
+   if option =="y"or option "Y":
+   cd=true            
+    
+    
+
