@@ -1,0 +1,16 @@
+import sys
+sys.version
+string=input("Enter string")
+i=0
+length=len(string)
+flag=True
+for k in range (-1,(-length-1),-1):
+  if string [i]!=string[k]:
+     flag =False
+     break
+  else:
+     i+=1
+if flag==True:
+  print("Input string is palindrome")
+else:
+  print("input string is not palindrome")  
